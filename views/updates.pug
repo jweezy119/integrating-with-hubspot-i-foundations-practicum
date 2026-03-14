@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Create a New Pet
+        a(href="/") Return to the homepage
+        form(method="POST")
+            label Pet Name
+            input(type="text" name="name" required)
+            label Pet Type
+            input(type="text" name="pet_type" required)
+            label Favorite Toy
+            input(type="text" name="favorite_toy" required)
+            input(type="submit" value="Submit")
